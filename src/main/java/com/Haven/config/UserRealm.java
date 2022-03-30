@@ -30,7 +30,7 @@ public class UserRealm extends AuthorizingRealm {
         User currentUser = (User) subject.getPrincipal();
         info.addStringPermission(currentUser.getPrems());
 //        info.addStringPermission("user:add");
-        return null;
+        return info;
     }
 
     //认证

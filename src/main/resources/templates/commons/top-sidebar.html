@@ -45,7 +45,7 @@
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+            <img th:src="@{/dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Brad Diesel
@@ -60,7 +60,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 John Pierce
@@ -75,7 +75,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Nora Silvester
@@ -127,7 +127,7 @@
 <!--index2侧边栏-->
 <aside th:fragment="sidebarnight" class="main-sidebar elevation-4 sidebar-dark-info">
   <!-- Brand Logo -->
-  <a th:href="@{/2}" class="brand-link"><img th:src="@{dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
+  <a th:href="@{/2}" class="brand-link"><img th:src="@{/dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
                                                       class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">穰穰满家</span>
   </a>
@@ -190,7 +190,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
+          <a th:href="@{/pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
             <p>
               Widgets
               <span class="right badge badge-danger">New</span>
@@ -207,48 +207,48 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/layout/top-nav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation + Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Boxed</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar <small>+ Custom Area</small></p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-topnav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-topnav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Navbar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-footer.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-footer.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Footer</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Collapsed Sidebar</p>
               </a>
@@ -264,23 +264,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/charts/chartjs.html}" class="nav-link"> <i
+              <a th:href="@{/pages/charts/chartjs.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>ChartJS</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Flot</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Inline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>uPlot</p>
               </a>
             </li>
@@ -295,42 +295,42 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Icons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Buttons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Sliders</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Modals & Alerts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Navbar & Tabs</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Timeline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Ribbons</p>
               </a>
             </li>
@@ -345,23 +345,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/advanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/advanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Advanced Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Editors</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/validation.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/validation.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Validation</p>
               </a>
@@ -377,17 +377,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Tables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>DataTables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>jsGrid</p>
               </a>
             </li>
@@ -395,7 +395,7 @@
         </li>
         <li class="nav-header">EXAMPLES</li>
         <li class="nav-item">
-          <a th:href="@{pages/calendar.html}" class="nav-link"> <i class="nav-icon fas fa-calendar-alt"></i>
+          <a th:href="@{/pages/calendar.html}" class="nav-link"> <i class="nav-icon fas fa-calendar-alt"></i>
             <p>
               Calendar
               <span class="badge badge-info right">2</span>
@@ -403,14 +403,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
+          <a th:href="@{/pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
             <p>
               Gallery
             </p>
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
+          <a th:href="@{/pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
             <p>
               Kanban Board
             </p>
@@ -425,19 +425,19 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/mailbox.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/mailbox.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Inbox</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/compose.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/compose.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Compose</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/read-mail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/read-mail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Read</p>
               </a>
@@ -453,60 +453,60 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/examples/invoice.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/invoice.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Invoice</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/profile.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/profile.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Profile</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/e-commerce.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/e-commerce.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>E-commerce</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/projects.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/projects.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Projects</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-add.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-add.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Add</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-edit.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-edit.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Edit</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-detail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-detail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Detail</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/contacts.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contacts.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contacts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>FAQ</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/contact-us.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contact-us.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contact us</p>
               </a>
@@ -530,25 +530,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/login.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/register.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/forgot-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/recover-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v1</p>
                   </a>
@@ -564,25 +564,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/login-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/register-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/forgot-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/recover-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v2</p>
                   </a>
@@ -590,40 +590,40 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/lockscreen.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/lockscreen.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Lockscreen</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/legacy-user-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/legacy-user-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Legacy User Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/language-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/language-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Language Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 404</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 500</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Pace</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/blank.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/blank.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Blank Page</p>
               </a>
@@ -644,12 +644,12 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Search</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/search/enhanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/search/enhanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Enhanced</p>
               </a>
@@ -755,7 +755,7 @@
       <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-      <a th:href="@{https://otheve.beacon.qq.com/analytics/v2_upload?appkey=0WEB0QEJW44KW5A5}" methods="post" class="nav-link">家</a></li>
+      <a th:href="@{/}" methods="post" class="nav-link">家</a></li>
     <li class="nav-item d-none d-sm-inline-block">
       <a th:href="@{#}" class="nav-link">联系我们</a></li>
   </ul>
@@ -791,7 +791,7 @@
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+            <img th:src="@{/dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Brad Diesel
@@ -806,7 +806,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 John Pierce
@@ -821,7 +821,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Nora Silvester
@@ -873,7 +873,7 @@
 <!--index1侧边栏-->
 <aside th:fragment="sidebarlight" class="main-sidebar elevation-4 sidebar-light-primary">
   <!-- Brand Logo -->
-  <a th:href="@{/}" class="brand-link"> <img th:src="@{dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
+  <a th:href="@{/}" class="brand-link"> <img th:src="@{/dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
                                                        class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">穰穰满家</span>
   </a>
@@ -936,7 +936,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
+          <a th:href="@{/pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
             <p>
               分类
               <span class="right badge badge-danger">New</span>
@@ -953,48 +953,48 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/layout/top-nav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation + Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Boxed</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar <small>+ Custom Area</small></p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-topnav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-topnav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Navbar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/fixed-footer.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-footer.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Footer</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Collapsed Sidebar</p>
               </a>
@@ -1010,23 +1010,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/charts/chartjs.html}" class="nav-link"> <i
+              <a th:href="@{/pages/charts/chartjs.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>ChartJS</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Flot</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Inline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>uPlot</p>
               </a>
             </li>
@@ -1041,42 +1041,42 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Icons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Buttons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Sliders</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Modals & Alerts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Navbar & Tabs</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Timeline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Ribbons</p>
               </a>
             </li>
@@ -1091,23 +1091,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/advanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/advanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Advanced Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Editors</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/forms/validation.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/validation.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Validation</p>
               </a>
@@ -1123,17 +1123,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Tables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>DataTables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>jsGrid</p>
               </a>
             </li>
@@ -1141,7 +1141,7 @@
         </li>
         <li class="nav-header">EXAMPLES</li>
         <li class="nav-item">
-          <a th:href="@{pages/calendar.html}" class="nav-link"> <i class="nav-icon far fa-calendar-alt"></i>
+          <a th:href="@{/pages/calendar.html}" class="nav-link"> <i class="nav-icon far fa-calendar-alt"></i>
             <p>
               成长日历
               <span class="badge badge-info right">2</span>
@@ -1149,14 +1149,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
+          <a th:href="@{/pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
             <p>
               成长相册
             </p>
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
+          <a th:href="@{/pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
             <p>
               Kanban Board
             </p>
@@ -1171,19 +1171,19 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/mailbox.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/mailbox.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Inbox</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/compose.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/compose.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Compose</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/mailbox/read-mail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/read-mail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Read</p>
               </a>
@@ -1199,60 +1199,60 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/examples/invoice.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/invoice.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Invoice</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/profile.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/profile.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Profile</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/e-commerce.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/e-commerce.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>E-commerce</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/projects.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/projects.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Projects</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-add.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-add.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Add</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-edit.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-edit.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Edit</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/project-detail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-detail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Detail</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/contacts.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contacts.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contacts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>FAQ</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/contact-us.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contact-us.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contact us</p>
               </a>
@@ -1276,25 +1276,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/login.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/register.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/forgot-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/recover-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v1</p>
                   </a>
@@ -1310,25 +1310,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/login-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/register-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/forgot-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{pages/examples/recover-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v2</p>
                   </a>
@@ -1336,40 +1336,40 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/lockscreen.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/lockscreen.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Lockscreen</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/legacy-user-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/legacy-user-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Legacy User Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/language-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/language-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Language Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 404</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 500</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Pace</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/examples/blank.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/blank.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Blank Page</p>
               </a>
@@ -1390,12 +1390,12 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Search</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{pages/search/enhanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/search/enhanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Enhanced</p>
               </a>
@@ -1536,7 +1536,7 @@
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+            <img th:src="@{/dist/img/user1-128x128.jpg}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Brad Diesel
@@ -1551,7 +1551,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user8-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 John Pierce
@@ -1566,7 +1566,7 @@
         <div class="dropdown-divider"></div>
         <a th:href="@{#}" class="dropdown-item">            <!-- Message Start -->
           <div class="media">
-            <img th:src="@{dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img th:src="@{/dist/img/user3-128x128.jpg}" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
                 Nora Silvester
@@ -1619,7 +1619,7 @@
 <!--index3 sidebar-->
 <aside th:fragment="sidebarnight3" class="main-sidebar elevation-4 sidebar-light-primary">
   <!-- Brand Logo -->
-  <a th:href="@{/3}" class="brand-link"><img th:src="@{dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
+  <a th:href="@{/3}" class="brand-link"><img th:src="@{/dist/img/AdminLTELogo.png}" alt="AdminLTE Logo"
                                                       class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">穰穰满家</span>
   </a>
@@ -1683,7 +1683,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a th:href="@{tatic/pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
+          <a th:href="@{/pages/widgets.html}" class="nav-link"> <i class="nav-icon fas fa-th"></i>
             <p>
               Widgets
               <span class="right badge badge-danger">New</span>
@@ -1700,48 +1700,48 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/top-nav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/top-nav-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Top Navigation + Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/layout/boxed.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Boxed</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/fixed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-sidebar-custom.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Sidebar <small>+ Custom Area</small></p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/fixed-topnav.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-topnav.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Navbar</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/fixed-footer.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/fixed-footer.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Fixed Footer</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
+              <a th:href="@{/pages/layout/collapsed-sidebar.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Collapsed Sidebar</p>
               </a>
@@ -1757,23 +1757,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/charts/chartjs.html}" class="nav-link"> <i
+              <a th:href="@{/pages/charts/chartjs.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>ChartJS</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/flot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Flot</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/inline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Inline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/charts/uplot.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>uPlot</p>
               </a>
             </li>
@@ -1788,42 +1788,42 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/icons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Icons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/buttons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Buttons</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/sliders.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Sliders</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/modals.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Modals & Alerts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/navbar.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Navbar & Tabs</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/timeline.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Timeline</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/UI/ribbons.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Ribbons</p>
               </a>
             </li>
@@ -1838,23 +1838,23 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/general.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>General Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/forms/advanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/advanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Advanced Elements</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/forms/editors.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Editors</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/forms/validation.html}" class="nav-link"> <i
+              <a th:href="@{/pages/forms/validation.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Validation</p>
               </a>
@@ -1870,17 +1870,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Tables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/data.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>DataTables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/tables/jsgrid.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>jsGrid</p>
               </a>
             </li>
@@ -1888,7 +1888,7 @@
         </li>
         <li class="nav-header">EXAMPLES</li>
         <li class="nav-item">
-          <a th:href="@{tatic/pages/calendar.html}" class="nav-link"> <i class="nav-icon fas fa-calendar-alt"></i>
+          <a th:href="@{/pages/calendar.html}" class="nav-link"> <i class="nav-icon fas fa-calendar-alt"></i>
             <p>
               Calendar
               <span class="badge badge-info right">2</span>
@@ -1896,14 +1896,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{tatic/pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
+          <a th:href="@{/pages/gallery.html}" class="nav-link"> <i class="nav-icon far fa-image"></i>
             <p>
               Gallery
             </p>
           </a>
         </li>
         <li class="nav-item">
-          <a th:href="@{tatic/pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
+          <a th:href="@{/pages/kanban.html}" class="nav-link"> <i class="nav-icon fas fa-columns"></i>
             <p>
               Kanban Board
             </p>
@@ -1918,19 +1918,19 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/mailbox/mailbox.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/mailbox.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Inbox</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/mailbox/compose.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/compose.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Compose</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/mailbox/read-mail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/mailbox/read-mail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Read</p>
               </a>
@@ -1946,60 +1946,60 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/invoice.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/invoice.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Invoice</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/profile.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/profile.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Profile</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/e-commerce.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/e-commerce.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>E-commerce</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/projects.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/projects.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Projects</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/project-add.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-add.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Add</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/project-edit.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-edit.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Edit</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/project-detail.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/project-detail.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Project Detail</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/contacts.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contacts.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contacts</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/faq.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>FAQ</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/contact-us.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/contact-us.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Contact us</p>
               </a>
@@ -2023,25 +2023,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/login.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/register.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/forgot-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v1</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/recover-password.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v1</p>
                   </a>
@@ -2057,25 +2057,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/login-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/login-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Login v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/register-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/register-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Register v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/forgot-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/forgot-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Forgot Password v2</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a th:href="@{tatic/pages/examples/recover-password-v2.html}" class="nav-link"> <i
+                  <a th:href="@{/pages/examples/recover-password-v2.html}" class="nav-link"> <i
                     class="far fa-circle nav-icon"></i>
                     <p>Recover Password v2</p>
                   </a>
@@ -2083,40 +2083,40 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/lockscreen.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/lockscreen.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Lockscreen</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/legacy-user-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/legacy-user-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Legacy User Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/language-menu.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/language-menu.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Language Menu</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/404.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 404</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/500.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Error 500</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/examples/pace.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Pace</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/examples/blank.html}" class="nav-link"> <i
+              <a th:href="@{/pages/examples/blank.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Blank Page</p>
               </a>
@@ -2137,12 +2137,12 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a th:href="@{tatic/pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+              <a th:href="@{/pages/search/simple.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                 <p>Simple Search</p>
               </a>
             </li>
             <li class="nav-item">
-              <a th:href="@{tatic/pages/search/enhanced.html}" class="nav-link"> <i
+              <a th:href="@{/pages/search/enhanced.html}" class="nav-link"> <i
                 class="far fa-circle nav-icon"></i>
                 <p>Enhanced</p>
               </a>

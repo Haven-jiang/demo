@@ -2,12 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>NewOrders</title>
+  <title>New Orders</title>
   <div th:replace="commons/plugin::headplugins"></div>
 </head>
-<body>
-  <div th:replace="~{commons/top-sidebar::navbarlight}"></div>
-  <div th:replace="~{commons/top-sidebar::sidebarlight}"></div>
-<div>NewOrders</div>
-</body>
+<div th:replace="commons/default-tamp::top" />
+  New Orders
+<div th:replace="commons/default-tamp::bottom" />
 </html>
