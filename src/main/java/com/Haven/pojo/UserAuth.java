@@ -2,7 +2,9 @@ package com.Haven.pojo;
 
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -59,37 +61,15 @@ public class UserAuth implements Serializable {
     /**
      * 用户创建时间
      */
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
     /**
      * 上次更新时间
      */
+    @TableField(fill = FieldFill.UPDATE)
     private LocalDateTime updateTime;
     /**
      * 上次登录时间
      */
     private LocalDateTime lastLoginTime;
-
-    /**
-     * createTime - 转Json存入数据库
-     * @return
-     */
-    public String getCreateTimeJson() {
-        return JSON.toJSONString(createTime).formatted("dd-MM-yyyy");
-    }
-
-    /**
-     * updateTime - 转Json存入数据库
-     * @return
-     */
-    public String getUpdateTimeJson() {
-        return JSON.toJSONString(updateTime).formatted("dd-MM-yyyy");
-    }
-
-    /**
-     * lastLoginTime - 转Json存入数据库
-     * @return
-     */
-    public String getLastLoginTimeJson() {
-        return JSON.toJSONString(lastLoginTime).formatted("dd-MM-yyyy");
-    }
 }
