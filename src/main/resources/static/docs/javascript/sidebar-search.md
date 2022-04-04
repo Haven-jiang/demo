@@ -25,7 +25,7 @@ The jQuery API provides more customizable options that allows the developer to p
 ```
 
 ##### HTML Markup
-Place this HTML Markup after `div.user-panel`.
+Place this HTML Markup after `div.userAuth-panel`.
 ```html
 <div class="form-inline">
   <div class="input-group" data-widget="sidebar-search">

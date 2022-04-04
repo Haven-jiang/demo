@@ -127,7 +127,7 @@ The main header contains the navbar. Construction of the navbar differs slightly
         </a>
         <div class="dropdown-divider"></div>
         <a href="#" class="dropdown-item">
-          <i class="fas fa-users mr-2"></i> 8 friend requests
+          <i class="fas fa-userAuths mr-2"></i> 8 friend requests
           <span class="float-right text-muted text-sm">12 hours</span>
         </a>
         <div class="dropdown-divider"></div>
@@ -260,7 +260,7 @@ The main header contains the navbar. Construction of the navbar differs slightly
         </a>
         <div class="dropdown-divider"></div>
         <a href="#" class="dropdown-item">
-          <i class="fas fa-users mr-2"></i> 8 friend requests
+          <i class="fas fa-userAuths mr-2"></i> 8 friend requests
           <span class="float-right text-muted text-sm">12 hours</span>
         </a>
         <div class="dropdown-divider"></div>
@@ -407,7 +407,7 @@ Top navbar example can be found in this [demo page](https://adminlte.io/themes/d
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <i class="fas fa-userAuths mr-2"></i> 8 friend requests
             <span class="float-right text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>
@@ -544,7 +544,7 @@ Top navbar example can be found in this [demo page](https://adminlte.io/themes/d
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <i class="fas fa-userAuths mr-2"></i> 8 friend requests
             <span class="float-right text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>

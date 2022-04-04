@@ -3,7 +3,7 @@ layout: page
 title: Implementations
 ---
 
-Thanks to many of AdminLTE users, there are multiple implementations of the template for easy integration with back-end frameworks. The following are some of them: 
+Thanks to many of AdminLTE userAuths, there are multiple implementations of the template for easy integration with back-end frameworks. The following are some of them: 
 
 
 ##### AdminLTE v3.0

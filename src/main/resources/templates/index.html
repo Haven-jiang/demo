@@ -71,7 +71,7 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div shiro:hasPerssion="'user:orders'" class="col-lg-3 col-6">
+          <div shiro:hasPerssion="'userAuth:orders'" class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
@@ -87,7 +87,7 @@
             </div>
           </div>
           <!-- ./col -->
-          <div shiro:hasPerssion="'user:bounce'" class="col-lg-3 col-6">
+          <div shiro:hasPerssion="'userAuth:bounce'" class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
@@ -102,7 +102,7 @@
           </div>
           <!-- ./col -->
           <!-- ./col -->
-          <div shiro:hasPerssion="'user:unique'" class="col-lg-3 col-6">
+          <div shiro:hasPerssion="'userAuth:unique'" class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
@@ -116,7 +116,7 @@
               <a th:href="@{/pages/UniqueVisitors}" class="small-box-footer">查看 <i class="fas fa-arrow-circle-right"></i></a></div>
           </div>
           <!-- ./col -->
-          <div shiro:hasPerssion="'user:user'" class="col-lg-3 col-6">
+          <div shiro:hasPerssion="'userAuth:userAuth'" class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
@@ -196,7 +196,7 @@
                       <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" th:src="@{dist/img/user1-128x128.jpg}" alt="message user image">
+                    <img class="direct-chat-img" th:src="@{dist/img/user1-128x128.jpg}" alt="message userAuth image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       您好有什么需要我们可以帮助到您的?
@@ -212,7 +212,7 @@
 <!--                      <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>-->
 <!--                    </div>-->
 <!--                    &lt;!&ndash; /.direct-chat-infos &ndash;&gt;-->
-<!--                    <img class="direct-chat-img" th:src="@{dist/img/user3-128x128.jpg}" alt="message user image">-->
+<!--                    <img class="direct-chat-img" th:src="@{dist/img/user3-128x128.jpg}" alt="message userAuth image">-->
 <!--                    &lt;!&ndash; /.direct-chat-img &ndash;&gt;-->
 <!--                    <div class="direct-chat-text">-->
 <!--                      10分!-->
@@ -228,7 +228,7 @@
 <!--                      <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>-->
 <!--                    </div>-->
 <!--                    &lt;!&ndash; /.direct-chat-infos &ndash;&gt;-->
-<!--                    <img class="direct-chat-img" th:src="@{dist/img/user1-128x128.jpg}" alt="message user image">-->
+<!--                    <img class="direct-chat-img" th:src="@{dist/img/user1-128x128.jpg}" alt="message userAuth image">-->
 <!--                    &lt;!&ndash; /.direct-chat-img &ndash;&gt;-->
 <!--                    <div class="direct-chat-text">-->
 <!--                      已接收到您的反馈 谢谢!-->
@@ -244,7 +244,7 @@
 <!--                      <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>-->
 <!--                    </div>-->
 <!--                    &lt;!&ndash; /.direct-chat-infos &ndash;&gt;-->
-<!--                    <img class="direct-chat-img" th:src="@{dist/img/user3-128x128.jpg}" alt="message user image">-->
+<!--                    <img class="direct-chat-img" th:src="@{dist/img/user3-128x128.jpg}" alt="message userAuth image">-->
 <!--                    &lt;!&ndash; /.direct-chat-img &ndash;&gt;-->
 <!--                    <div class="direct-chat-text">-->
 <!--                      I would love to.-->
@@ -433,7 +433,7 @@
               </div>
               <div class="card-body">
 <!--                <div th:href="@{https://have1.coding.net/p/image/d/image/git/raw/master/26.jpg?download=true}" class="image" style="height: 250px; width: 100%;"></div>-->
-                <img th:src="@{https://have1.coding.net/p/image/d/image/git/raw/master/26.jpg?download=true}" style="height: 250px; width: 100%;border-radius: 5px" alt="message user image">
+                <img th:src="@{https://have1.coding.net/p/image/d/image/git/raw/master/26.jpg?download=true}" style="height: 250px; width: 100%;border-radius: 5px" alt="message userAuth image">
               </div>
               <!-- /.card-body-->
               <div class="card-footer bg-transparent">

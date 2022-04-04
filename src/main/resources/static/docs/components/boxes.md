@@ -204,7 +204,7 @@ There are two types of boxes, info boxes & small boxes. Both boxes are used to d
         <p>User Registrations</p>
       </div>
       <div class="icon">
-        <i class="fas fa-user-plus"></i>
+        <i class="fas fa-userAuth-plus"></i>
       </div>
       <a href="#" class="small-box-footer">
         More info <i class="fas fa-arrow-circle-right"></i>
@@ -236,7 +236,7 @@ There are two types of boxes, info boxes & small boxes. Both boxes are used to d
     <p>User Registrations</p>
   </div>
   <div class="icon">
-    <i class="fas fa-user-plus"></i>
+    <i class="fas fa-userAuth-plus"></i>
   </div>
   <a href="#" class="small-box-footer">
     More info <i class="fas fa-arrow-circle-right"></i>

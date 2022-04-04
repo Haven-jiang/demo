@@ -1,17 +1,15 @@
 package com.Haven.service;
 
-import com.Haven.mapper.UserMapper;
-import com.Haven.pojo.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.Haven.pojo.UserAuth;
 
 import java.util.List;
 
 public interface UserService {
-    void insertUser(User user);
+    void insertUser(UserAuth userAuth);
     void deleteUserById(Integer id);
-    void updateUser(User user);
-    List<User> selectUserByName(String username);
-    List<User> selectUserById(Integer id);
-    List<User> selectUserAll();
-    String getPrems(User user);
+    void updateUser(UserAuth userAuth);
+    List<UserAuth> selectUserByName(String username);
+    List<UserAuth> selectUserById(Integer id);
+    List<UserAuth> selectUserAll();
+    String getPrems(UserAuth userAuth);
 }

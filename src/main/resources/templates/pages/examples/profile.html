@@ -114,7 +114,7 @@
             <span class="float-right text-muted text-sm">3 mins</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a th:href="@{#}" class="dropdown-item"> <i class="fas fa-users mr-2"></i> 8 friend requests
+          <a th:href="@{#}" class="dropdown-item"> <i class="fas fa-userAuths mr-2"></i> 8 friend requests
             <span class="float-right text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>
@@ -148,8 +148,8 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <!-- Sidebar userAuth (optional) -->
+      <div class="userAuth-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img th:src="@{dist/img/user2-160x160.jpg}" class="img-circle elevation-2" alt="User Image"></div>
         <div class="info">
@@ -579,7 +579,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a th:href="@{examples/legacy-user-menu.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+                <a th:href="@{examples/legacy-userAuth-menu.html}" class="nav-link"> <i class="far fa-circle nav-icon"></i>
                   <p>Legacy User Menu</p>
                 </a>
               </li>
@@ -755,7 +755,7 @@
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
-                  <img class="profile-user-img img-fluid img-circle"
+                  <img class="profile-userAuth-img img-fluid img-circle"
                        th:src="@{dist/img/user4-128x128.jpg}" alt="User profile picture">
                 </div>
 
@@ -838,13 +838,13 @@
                   <div class="active tab-pane" id="activity">
                     <!-- Post -->
                     <div class="post">
-                      <div class="user-block">
-                        <img class="img-circle img-bordered-sm" th:src="@{dist/img/user1-128x128.jpg}" alt="user image">
+                      <div class="userAuth-block">
+                        <img class="img-circle img-bordered-sm" th:src="@{dist/img/user1-128x128.jpg}" alt="userAuth image">
                         <span class="username">
 <a th:href="@{#}">Jonathan Burke Jr.</a><a th:href="@{#}" class="float-right btn-tool"><i class="fas fa-times"></i></a>                        </span>
                         <span class="description">Shared publicly - 7:30 PM today</span>
                       </div>
-                      <!-- /.user-block -->
+                      <!-- /.userAuth-block -->
                       <p>
                         Lorem ipsum represents a long-held tradition for designers,
                         typographers and the like. Some people hate it and argue for
@@ -868,13 +868,13 @@
 
                     <!-- Post -->
                     <div class="post clearfix">
-                      <div class="user-block">
+                      <div class="userAuth-block">
                         <img class="img-circle img-bordered-sm" th:src="@{dist/img/user7-128x128.jpg}" alt="User Image">
                         <span class="username">
 <a th:href="@{#}">Sarah Ross</a><a th:href="@{#}" class="float-right btn-tool"><i class="fas fa-times"></i></a>                        </span>
                         <span class="description">Sent you a message - 3 days ago</span>
                       </div>
-                      <!-- /.user-block -->
+                      <!-- /.userAuth-block -->
                       <p>
                         Lorem ipsum represents a long-held tradition for designers,
                         typographers and the like. Some people hate it and argue for
@@ -896,13 +896,13 @@
 
                     <!-- Post -->
                     <div class="post">
-                      <div class="user-block">
+                      <div class="userAuth-block">
                         <img class="img-circle img-bordered-sm" th:src="@{dist/img/user6-128x128.jpg}" alt="User Image">
                         <span class="username">
 <a th:href="@{#}">Adam Jones</a><a th:href="@{#}" class="float-right btn-tool"><i class="fas fa-times"></i></a>                        </span>
                         <span class="description">Posted 5 photos - 5 days ago</span>
                       </div>
-                      <!-- /.user-block -->
+                      <!-- /.userAuth-block -->
                       <div class="row mb-3">
                         <div class="col-sm-6">
                           <img class="img-fluid" th:src="@{dist/img/photo1.png}" alt="Photo"></div>
@@ -971,7 +971,7 @@
                       <!-- END timeline item -->
                       <!-- timeline item -->
                       <div>
-                        <i class="fas fa-user bg-info"></i>
+                        <i class="fas fa-userAuth bg-info"></i>
 
                         <div class="timeline-item">
                           <span class="time"><i class="far fa-clock"></i> 5 mins ago</span>

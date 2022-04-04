@@ -2,35 +2,34 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.Haven.mapper.UserMapper">
-    <insert id="insertUser" parameterType="com.Haven.pojo.User">
-        insert into STAGE.user(id, username, password)
+<mapper namespace="com.Haven.mapper.UserAuthMapper">
+    <insert id="insertUser" parameterType="com.Haven.pojo.UserAuth">
+        insert into STAGE.userAuth(id, username, password)
         values (#{id}, #{username}, #{password}, #{prems});
     </insert>
     <delete id="deleteUserById" parameterType="Integer">
         delete
-        from user
+        from userAuth
         where id=#{userid};
     </delete>
-    <update id="updateUser" parameterType="com.Haven.pojo.User">
-        update user set
+    <update id="updateUser" parameterType="com.Haven.pojo.UserAuth">
+        update userAuth set
         username = #{username},
-        password = #{password},
-        prems = #{prems}
+        password = #{password}
         where id = #{id};
     </update>
-    <select id="selectUserByName" parameterType="String" resultType="com.Haven.pojo.User">
+    <select id="selectUserByName" parameterType="String" resultType="com.Haven.pojo.UserAuth">
         select *
-        from user
+        from userAuth
         where username = #{username};
     </select>
-    <select id="selectUserById" parameterType="Integer" resultType="com.Haven.pojo.User">
+    <select id="selectUserById" parameterType="Integer" resultType="com.Haven.pojo.UserAuth">
         select *
-        from user
+        from userAuth
         where id = #{userid};
     </select>
-    <select id="selectUserAll" resultType="com.Haven.pojo.User">
+    <select id="selectUserAll" resultType="com.Haven.pojo.UserAuth">
         select *
-        from user;
+        from userAuth;
     </select>
 </mapper>

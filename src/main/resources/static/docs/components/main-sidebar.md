@@ -17,8 +17,8 @@ The sidebar used in this page to the left provides an example of what your sideb
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <!-- Sidebar user panel (optional) -->
-    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <!-- Sidebar userAuth panel (optional) -->
+    <div class="userAuth-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
@@ -104,7 +104,7 @@ You can place the pushmenu button inside the brand, simply replace the brand-lin
 
 #### Search Form in Sidebar
 
-You can add this code above user-panel or nav-sidebar:
+You can add this code above userAuth-panel or nav-sidebar:
 
 ```html
 <form class="form-inline">

@@ -1,11 +1,9 @@
 package com.Haven.config;
 
-import com.Haven.pojo.User;
+import com.Haven.pojo.UserAuth;
 import com.Haven.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
-import org.apache.shiro.authc.credential.CredentialsMatcher;
-import org.apache.shiro.authc.credential.Md5CredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -27,9 +25,9 @@ public class UserRealm extends AuthorizingRealm {
         System.out.println("执行了=>授权doGetAuthorizationInfo");
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         Subject subject = SecurityUtils.getSubject();
-        User currentUser = (User) subject.getPrincipal();
-        info.addStringPermission(currentUser.getPrems());
-//        info.addStringPermission("user:add");
+        UserAuth currentUserAuth = (UserAuth) subject.getPrincipal();
+//        info.addStringPermission(currentUserAuth.getPrems());
+//        info.addStringPermission("user:add"); 
         return info;
     }
 
@@ -38,15 +36,15 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         System.out.println("执行了=>认证doGetAuthorizationInfo");
         UsernamePasswordToken userToken = (UsernamePasswordToken) token;
-        List<User> users = userService.selectUserByName(userToken.getUsername());
-        User lastUser = new User();
+        List<UserAuth> userAuths = userService.selectUserByName(userToken.getUsername());
+        UserAuth lastUserAuth = new UserAuth();
         String password = String.valueOf(userToken.getPassword());
-        if (users.isEmpty()) {
+        if (userAuths.isEmpty()) {
             return null;
         }
-        for (User user : users) {
-            if (password.equals(user.getPassword())) lastUser = user;
+        for (UserAuth userAuth : userAuths) {
+            if (password.equals(userAuth.getPassword())) lastUserAuth = userAuth;
         }
-        return new SimpleAuthenticationInfo(lastUser, lastUser.getPassword(),"");
+        return new SimpleAuthenticationInfo(lastUserAuth, lastUserAuth.getPassword(),"");
     }
 }
