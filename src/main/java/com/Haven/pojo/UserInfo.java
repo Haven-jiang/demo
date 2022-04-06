@@ -1,12 +1,9 @@
 package com.Haven.pojo;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.annotation.JSONField;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -16,11 +13,13 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@TableName("UserInfo")
 public class UserInfo {
     /**
      * userInfo id 用于其他实体类取数据
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Integer id;
     /**
      * user 邮箱
@@ -33,7 +32,7 @@ public class UserInfo {
     /**
      * 用户简介 - 签名
      */
-    private String intro;
+    private String intro = "在这里写下你的简介";
     /**
      * 用户是否被关小黑屋
      */

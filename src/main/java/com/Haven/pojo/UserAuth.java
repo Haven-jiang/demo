@@ -2,10 +2,7 @@ package com.Haven.pojo;
 
 
 import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,11 +15,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@TableName("user_auth")
 public class UserAuth implements Serializable {
     /**
      * userAuth 标识
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Integer id;
     /**
      * 用户名 不是昵称!
@@ -39,7 +37,7 @@ public class UserAuth implements Serializable {
     /**
      * 指向userInfo
      */
-    private Integer userinfoId;
+    private Integer userInfoId;
     /**
      * 登录ip
      */

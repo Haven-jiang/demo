@@ -5,7 +5,7 @@ import com.Haven.pojo.UserAuth;
 import java.util.List;
 
 public interface UserService {
-    void insertUser(UserAuth userAuth);
+    void register(UserAuth userAuth);
     void deleteUserById(Integer id);
     void updateUser(UserAuth userAuth);
     List<UserAuth> selectUserByName(String username);
