@@ -1,6 +1,6 @@
 package com.Haven.config;
 
-import com.Haven.pojo.UserAuth;
+import com.Haven.entity.UserAuth;
 import com.Haven.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;

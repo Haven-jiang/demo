@@ -25,11 +25,11 @@ public class RandomUtil {
     private static final String str = new String("qwertyuiopasdfghjklzxcvbnm_QWERTYUIOPASDFGHJKLZXCVBNM1234567890");
 
     public static String getRandomString(int length) {
-        String resultString = new String();
+        StringBuilder resultString = new StringBuilder();
         for (int i = 0; i < length; i++) {
-            resultString += str.charAt(new Random().nextInt(str.length()));
+            resultString.append(str.charAt(new Random().nextInt(str.length())));
         }
-        return resultString;
+        return resultString.toString();
     }
 
     public static Integer getRandomId(int length) {

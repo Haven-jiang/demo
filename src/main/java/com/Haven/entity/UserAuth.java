@@ -1,7 +1,6 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 
-import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

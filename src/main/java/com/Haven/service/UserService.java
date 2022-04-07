@@ -1,13 +1,15 @@
 package com.Haven.service;
 
-import com.Haven.pojo.UserAuth;
+import com.Haven.entity.UserAuth;
+import com.Haven.vo.UserVo;
 
 import java.util.List;
 
 public interface UserService {
-    void register(UserAuth userAuth);
-    void deleteUserById(Integer id);
-    void updateUser(UserAuth userAuth);
+    boolean register(UserAuth userAuth);
+    boolean deleteUserById(Integer id);
+    boolean updateUser(UserAuth userAuth);
+    void updatePassword(UserVo userVo);
     List<UserAuth> selectUserByName(String username);
     List<UserAuth> selectUserById(Integer id);
     List<UserAuth> selectUserAll();

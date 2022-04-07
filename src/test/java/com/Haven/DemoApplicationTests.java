@@ -1,9 +1,9 @@
 package com.Haven;
 
 import com.Haven.mapper.*;
-import com.Haven.pojo.UserAuth;
-import com.Haven.pojo.UserInfo;
-import com.Haven.pojo.UserRole;
+import com.Haven.entity.UserAuth;
+import com.Haven.entity.UserInfo;
+import com.Haven.entity.UserRole;
 import com.Haven.utils.RandomUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

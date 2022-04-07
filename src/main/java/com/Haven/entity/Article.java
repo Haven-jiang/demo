@@ -1,7 +1,6 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class Article {
     /**

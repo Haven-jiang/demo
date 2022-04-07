@@ -1,4 +1,4 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@TableName("UserInfo")
+@TableName("user_info")
 public class UserInfo {
     /**
      * userInfo id 用于其他实体类取数据

@@ -1,15 +1,14 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@TableName("UserRealNameAuth")
+@TableName("user_real_name_auth")
 public class UserRealNameAuth {
     /**
      * 认证信息id

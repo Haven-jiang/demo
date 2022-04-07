@@ -1,4 +1,4 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 import java.util.List;
 

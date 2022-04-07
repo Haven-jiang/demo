@@ -1,4 +1,4 @@
-package com.Haven.pojo;
+package com.Haven.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -8,33 +8,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@TableName("UserSeller")
-public class UserSeller {
+@TableName("user_role")
+public class UserRole {
     /**
-     * id
+     * userRole id
      */
     @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Integer id;
     /**
-     * 商品列表
+     * User 用户唯一标识
      */
-    private List<Integer> goodsList;
+    private Integer userId;
     /**
-     * 卖出记录
+     * 用户权限
      */
-    private List<Integer> sellingList;
-    /**
-     * 满意度等级
-     */
-    private Integer satisfactionLevel;
-    /**
-     * 默认发货地址
-     */
-    private String defaultShipAddress;
+    private String perms;
 }
