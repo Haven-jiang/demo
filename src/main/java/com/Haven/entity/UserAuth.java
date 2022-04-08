@@ -10,6 +10,13 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/**
+ * 用户
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

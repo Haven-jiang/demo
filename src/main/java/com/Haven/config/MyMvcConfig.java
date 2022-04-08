@@ -18,6 +18,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/pages/UserRegistrations").setViewName("/pages/UserRegistrations");
         registry.addViewController("/pages/UniqueVisitors").setViewName("/pages/UniqueVisitors");
         registry.addViewController("/noAuth").setViewName("/pages/examples/404");
+//        registry.addViewController("/user/registration").setViewName("/pages/examples/register");
 //        registry.addViewController("/login").setViewName("/pages/examples/login");
 //        registry.addViewController("/pages/calendar.html").setViewName("/pages/calendar");
 //        registry.addViewController("/pages/gallery.html").setViewName("/pages/gallery");

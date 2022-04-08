@@ -1,7 +1,12 @@
 package com.Haven.entity;
 
 import java.util.List;
-
+/**
+ * 菜单类
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
 public class Menu {
     /**
      * 菜单唯一标识

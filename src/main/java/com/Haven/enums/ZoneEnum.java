@@ -20,6 +20,6 @@ public enum ZoneEnum {
     /**
      * 描述
      */
-    private final String desc;
+    private final String describe;
 
 }

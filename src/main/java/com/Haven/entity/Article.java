@@ -1,7 +1,12 @@
 package com.Haven.entity;
 
 import java.time.LocalDateTime;
-
+/**
+ * 文章pojo类
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
 public class Article {
     /**
      * 文章id

@@ -7,6 +7,13 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
+/**
+ * 商品pojo类
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -4,10 +4,14 @@ import com.Haven.mapper.*;
 import com.Haven.entity.UserAuth;
 import com.Haven.entity.UserInfo;
 import com.Haven.entity.UserRole;
+import com.Haven.service.UserService;
 import com.Haven.utils.RandomUtil;
 import org.junit.jupiter.api.Test;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import static com.Haven.constant.MQPrefixConst.EMAIL_EXCHANGE;
 
 @SpringBootTest
 class DemoApplicationTests {
@@ -22,6 +26,8 @@ class DemoApplicationTests {
     UserRealNameAuthMapper userRealNameAuthMapper;
     @Autowired
     UserSellerMapper userSellerMapper;
+    @Autowired
+    RabbitTemplate rabbitTemplate;
 
     @Test
     void contextLoads() {
@@ -30,7 +36,7 @@ class DemoApplicationTests {
                                     .build();
         UserInfo userInfo = UserInfo.builder()
                                     .nickname(RandomUtil.getRandomNick())
-                                    .email("example1@example.com")
+                                    .email("haven-just@qq.com")
                                     .isBan(0)
                                     .build();
         userInfoMapper.insert(userInfo);
@@ -50,6 +56,20 @@ class DemoApplicationTests {
         System.out.println();
 //        userService.insertUser(new User(1001, "root", "asdf1476"));
 //        System.out.println(userService.selectUserByName("root"));
+    }
+    @Test
+    void test01() {
+
+        rabbitTemplate.convertAndSend(EMAIL_EXCHANGE, "email", RandomUtil.getRandomUUID(25));
+        System.out.println();
+    }
+
+    @Autowired
+    UserService userService;
+
+    @Test
+    void test_sendmail() {
+        userService.sendCode("haven@justholdway.top");
     }
 
 }

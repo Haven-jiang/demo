@@ -5,6 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * 文件pojo类
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

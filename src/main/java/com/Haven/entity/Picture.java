@@ -3,13 +3,15 @@ package com.Haven.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/**
+ * 图片类 - 继承于文件类
+ *
+ * @author HavenJust
+ * @date 2022/4/7
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-/**
- * 图片类 - 继承于文件类
- */
 public class Picture extends Document{
     /**
      * 图床url地址 : 与Document中byte[]数据二选一
