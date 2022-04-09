@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MailSender/MailSender.iml" filepath="$PROJECT_DIR$/MailSender/MailSender.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/website-spring/website-spring.iml" filepath="$PROJECT_DIR$/website-spring/website-spring.iml" />
     </modules>
   </component>
 </project>

@@ -4,7 +4,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-@RabbitListener(queues = "sms.direct.queue")
+@RabbitListener(queues = {"sms.direct.queue"})
 @Component
 public class SmsConsumer {
 

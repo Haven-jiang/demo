@@ -13,7 +13,7 @@ spring:
       class: javax.net.ssl.SSLSocketFactory
   rabbitmq:
     username: guest
-    password: guest
+    password: Justholdway521
     virtual-host: /
     host: 127.0.0.1
     port: 5672
