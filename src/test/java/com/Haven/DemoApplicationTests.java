@@ -69,7 +69,8 @@ class DemoApplicationTests {
 
     @Test
     void test_sendmail() {
-        userService.sendCode("haven@justholdway.top");
+        rabbitTemplate.convertAndSend("direct_sms_exchange", "sms", RandomUtil.getRandomUUID(25));
+        userService.sendCode("haven-just@qq.com");
     }
 
 }
