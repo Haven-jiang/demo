@@ -13,8 +13,10 @@ public interface UserService {
     boolean updateUser(UserAuth userAuth);
     void updatePassword(UserVO userVo);
     void sendCode(String username);
+
+    String getUserPerm(String username);
+
     UserAuth selectUserByName(String username);
-    List<UserAuth> selectUserById(Integer id);
+    UserAuth selectUserById(Integer id);
     List<UserAuth> selectUserAll();
-    String getPrems(UserAuth userAuth);
 }

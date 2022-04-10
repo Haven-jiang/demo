@@ -7,14 +7,12 @@ import com.Haven.entity.UserRole;
 import com.Haven.enums.StatusCodeEnum;
 import com.Haven.exception.MyException;
 import com.Haven.mapper.*;
-import com.Haven.service.RedisService;
 import com.Haven.service.UserService;
 import com.Haven.utils.RandomUtil;
 import com.Haven.utils.RedisUtil;
 import com.Haven.vo.UserVO;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.apache.catalina.User;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -22,7 +20,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
@@ -136,6 +133,18 @@ public class UserServiceImpl implements UserService {
         return Objects.nonNull(userAuth);
     }
 
+    @Override
+    public String getUserPerm(String username) {
+        return userRoleMapper.selectOne(new LambdaQueryWrapper<UserRole>()
+                .select()
+                .eq(UserRole::getId,
+                        userAuthMapper.selectOne(new LambdaQueryWrapper<UserAuth>()
+                                .select()
+                                .eq(UserAuth::getUsername, username)
+                        ).getUserRoleId())
+        ).getPerms();
+    }
+
 
     @Override
     public UserAuth selectUserByName(String username) {
@@ -147,18 +156,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserAuth> selectUserById(Integer id) {
-        return new ArrayList<>();
+    public UserAuth selectUserById(Integer id) {
+        return userAuthMapper.selectOne(new LambdaQueryWrapper<UserAuth>()
+                                                .select()
+                                                .eq(UserAuth::getId, id)
+        );
     }
 
     @Override
     public List<UserAuth> selectUserAll() {
-        return new ArrayList<>();
-    }
-
-    @Override
-    public String getPrems(UserAuth userAuth) {
-
-        return userRoleMapper.selectById(userAuth.getUserRoleId()).getPerms();
+        return userAuthMapper.selectList(
+                new LambdaQueryWrapper<UserAuth>().select()
+        );
     }
 }

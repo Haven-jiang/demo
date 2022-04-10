@@ -2,7 +2,21 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
       xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
-
+<head>
+  <script src="statics/js/jquery-3.4.1.js"></script>
+  <script>
+    function a() {
+      $.post({
+        url: "/pages/menu",
+        data: {},
+        success: function (data, status) {
+          console.log(data);
+          console.log("status=" + status);
+        }
+      })
+    }
+  </script>
+</head>
 
 <!--index1顶栏-->
 <nav th:fragment="navbarlight" class="main-header navbar navbar-expand navbar-white navbar-light">

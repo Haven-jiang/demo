@@ -2,6 +2,7 @@ package com.Haven.config;
 
 import com.Haven.entity.UserAuth;
 import com.Haven.service.UserService;
+import com.Haven.utils.PermUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -28,6 +29,7 @@ public class UserRealm extends AuthorizingRealm {
         UserAuth currentUserAuth = (UserAuth) subject.getPrincipal();
 //        info.addStringPermission(currentUserAuth.getPrems());
         info.addStringPermission("user:" + currentUserAuth.getUsername());
+        info.addStringPermission(userService.getUserPerm(currentUserAuth.getUsername()));
         return info;
     }
 

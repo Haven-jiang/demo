@@ -25,6 +25,7 @@ public class ShiroConfig {
         map.put("/pages/BounceRate", "perms[user:bounce]");
         map.put("/pages/UserRegistrations", "perms[user:user]");
         map.put("/pages/UniqueVisitors", "perms[user:unique]");
+        map.put("/pages/menu", "perms[user:menu]");
         map.put("/pages/*", "authc");
 
         bean.setFilterChainDefinitionMap(map);
