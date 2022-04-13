@@ -1,0 +1,111 @@
+{
+  "flag": true,
+  "code": 20000,
+  "message": "操作成功",
+  "data": {
+    "articleCount": 1,
+    "categoryCount": 1,
+    "tagCount": 1,
+    "viewsCount": "0",
+    "websiteConfig": {
+      "websiteAvatar": "https://static.talkxj.com/config/43a07ac1ca201143f7b938d0791124fc.png",
+      "websiteName": "个人博客",
+      "websiteAuthor": "网站作者",
+      "websiteIntro": "网站简介",
+      "websiteNotice": "请前往后台管理->系统管理->网站管理处修改信息",
+      "websiteCreateTime": "2019-12-10",
+      "websiteRecordNo": "备案号",
+      "socialLoginList": [
+        "qq",
+        "weibo"
+      ],
+      "socialUrlList": [
+        "qq",
+        "github",
+        "gitee"
+      ],
+      "qq": "",
+      "github": "",
+      "gitee": "",
+      "touristAvatar": "https://static.talkxj.com/photos/0bca52afdb2b9998132355d716390c9f.png",
+      "userAvatar": "https://static.talkxj.com/config/2cd793c8744199053323546875655f32.jpg",
+      "isCommentReview": 0,
+      "isMessageReview": 0,
+      "isEmailNotice": 1,
+      "isReward": 1,
+      "weiXinQRCode": "https://static.talkxj.com/photos/4f767ef84e55ab9ad42b2d20e51deca1.png",
+      "alipayQRCode": "https://static.talkxj.com/photos/13d83d77cc1f7e4e0437d7feaf56879f.png",
+      "isChatRoom": 1,
+      "websocketUrl": "ws://127.0.0.1:8080/websocket",
+      "isMusicPlayer": 1
+    },
+    "pageList": [
+      {
+        "id": 1,
+        "pageName": "首页",
+        "pageLabel": "home",
+        "pageCover": "https://static.talkxj.com/config/0bee7ba5ac70155766648e14ae2a821f.jpg"
+      },
+      {
+        "id": 2,
+        "pageName": "归档",
+        "pageLabel": "archive",
+        "pageCover": "https://static.talkxj.com/config/643f28683e1c59a80ccfc9cb19735a9c.jpg"
+      },
+      {
+        "id": 3,
+        "pageName": "分类",
+        "pageLabel": "category",
+        "pageCover": "https://static.talkxj.com/config/83be0017d7f1a29441e33083e7706936.jpg"
+      },
+      {
+        "id": 4,
+        "pageName": "标签",
+        "pageLabel": "tag",
+        "pageCover": "https://static.talkxj.com/config/a6f141372509365891081d755da963a1.png"
+      },
+      {
+        "id": 5,
+        "pageName": "相册",
+        "pageLabel": "album",
+        "pageCover": "https://static.talkxj.com/config/1ecb6fc94e38c38713000efe37492e73.png"
+      },
+      {
+        "id": 6,
+        "pageName": "友链",
+        "pageLabel": "link",
+        "pageCover": "https://static.talkxj.com/config/9034edddec5b8e8542c2e61b0da1c1da.jpg"
+      },
+      {
+        "id": 7,
+        "pageName": "关于",
+        "pageLabel": "about",
+        "pageCover": "https://static.talkxj.com/config/2a56d15dd742ff8ac238a512d9a472a1.jpg"
+      },
+      {
+        "id": 8,
+        "pageName": "留言",
+        "pageLabel": "message",
+        "pageCover": "https://static.talkxj.com/config/acfeab8379508233fa7e4febf90c2f2e.png"
+      },
+      {
+        "id": 9,
+        "pageName": "个人中心",
+        "pageLabel": "user",
+        "pageCover": "https://static.talkxj.com/config/ebae4c93de1b286a8d50aa62612caa59.jpeg"
+      },
+      {
+        "id": 10,
+        "pageName": "文章列表",
+        "pageLabel": "articleList",
+        "pageCover": "https://static.talkxj.com/config/924d65cc8312e6cdad2160eb8fce6831.jpg"
+      },
+      {
+        "id": 904,
+        "pageName": "说说",
+        "pageLabel": "talk",
+        "pageCover": "https://static.talkxj.com/config/a741b0656a9a3db2e2ba5c2f4140eb6c.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "flag": true,
+  "code": 20000,
+  "message": "操作成功",
+  "data": {
+    "articleCount": 1,
+    "categoryCount": 1,
+    "tagCount": 1,
+    "viewsCount": "0",
+    "websiteConfig": {
+      "websiteAvatar": "https://static.talkxj.com/config/43a07ac1ca201143f7b938d0791124fc.png",
+      "websiteName": "个人博客",
+      "websiteAuthor": "网站作者",
+      "websiteIntro": "网站简介",
+      "websiteNotice": "请前往后台管理->系统管理->网站管理处修改信息",
+      "websiteCreateTime": "2019-12-10",
+      "websiteRecordNo": "备案号",
+      "socialLoginList": [
+        "qq",
+        "weibo"
+      ],
+      "socialUrlList": [
+        "qq",
+        "github",
+        "gitee"
+      ],
+      "qq": "",
+      "github": "",
+      "gitee": "",
+      "touristAvatar": "https://static.talkxj.com/photos/0bca52afdb2b9998132355d716390c9f.png",
+      "userAvatar": "https://static.talkxj.com/config/2cd793c8744199053323546875655f32.jpg",
+      "isCommentReview": 0,
+      "isMessageReview": 0,
+      "isEmailNotice": 1,
+      "isReward": 1,
+      "weiXinQRCode": "https://static.talkxj.com/photos/4f767ef84e55ab9ad42b2d20e51deca1.png",
+      "alipayQRCode": "https://static.talkxj.com/photos/13d83d77cc1f7e4e0437d7feaf56879f.png",
+      "isChatRoom": 1,
+      "websocketUrl": "ws://127.0.0.1:8080/websocket",
+      "isMusicPlayer": 1
+    },
+    "menuList": [
+      {
+        "name": "新菜单_0",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_0_1",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_0_1_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 3,
+                "child": []
+              }
+            ]
+          },
+          {
+            "name": "新菜单_0_2",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_0_2_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 3,
+                "child": []
+              }
+            ]
+          },
+          {
+            "name": "新菜单_0_3",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_0_3_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 3,
+                "child": []
+              }
+            ]
+          },
+          {
+            "name": "新菜单_0_4",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_0_4_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 3,
+                "child": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "新菜单_1",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_1_1",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_1_1_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 4,
+                "child": null
+              }
+            ]
+          },
+          {
+            "name": "新菜单_1_2",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_1_2_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 4,
+                "child": null
+              },
+              {
+                "name": "新菜单_1_2_2",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 4,
+                "child": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "新菜单_2",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_2_1",
+            "path": "/pages/new",
+            "icon": null,
+            "level": 2,
+            "child": []
+          },
+          {
+            "name": "新菜单_2_2",
+            "path": "/pages/new",
+            "icon": null,
+            "level": 2,
+            "child": []
+          }
+        ]
+      },
+      {
+        "name": "新菜单_3",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_3_1",
+            "path": "/pages/new",
+            "icon": null,
+            "level": 2,
+            "child": []
+          },
+          {
+            "name": "新菜单_3_2",
+            "path": "/pages/new",
+            "icon": null,
+            "level": 2,
+            "child": []
+          }
+        ]
+      },
+      {
+        "name": "新菜单_4",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_4_1",
+            "path": "/pages/new",
+            "icon": null,
+            "level": 2,
+            "child": []
+          }
+        ]
+      },
+      {
+        "name": "新菜单_5",
+        "path": "",
+        "icon": null,
+        "level": 1,
+        "child": [
+          {
+            "name": "新菜单_5_1",
+            "path": "",
+            "icon": null,
+            "level": 2,
+            "child": [
+              {
+                "name": "新菜单_5_1_1",
+                "path": "/pages/new",
+                "icon": null,
+                "level": 3,
+                "child": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

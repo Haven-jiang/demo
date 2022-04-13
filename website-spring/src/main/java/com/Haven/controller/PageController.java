@@ -15,7 +15,7 @@ public class PageController {
     @Autowired
     MenuService menuService;
 
-    @PostMapping("/menu")
+    @RequestMapping("/menu")
     public MenuVO menu() {
         return menuService.menuBuild();
     }
