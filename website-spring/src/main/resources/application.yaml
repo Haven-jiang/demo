@@ -3,7 +3,7 @@ spring:
     cache: false
   datasource:
     username: root
-    password: Justholdway521
+    password: asdf1476
     url: jdbc:mysql://127.0.0.1:3306/STAGE?serverTimezone=UTC&useUnicode=true&CharacterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource

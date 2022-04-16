@@ -8,8 +8,7 @@
   <title>f(x) | 固科柢穰满家</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-        th:href="@{dist/css/fonts/googlefont.css}">
+  <link rel="stylesheet" th:href="@{dist/css/fonts/googlefont.css}">
   <!-- Font Awesome -->
   <link rel="stylesheet" th:href="@{plugins/fontawesome-free/css/all.min.css}">
   <!-- Ionicons -->
@@ -28,6 +27,22 @@
   <link rel="stylesheet" th:href="@{plugins/daterangepicker/daterangepicker.css}">
   <!-- summernote -->
   <link rel="stylesheet" th:href="@{plugins/summernote/summernote-bs4.min.css}">
+
+  <script th:src="@{/plugins/jquery/jquery.js}"></script>
+  <script>
+    function myAutoRun() {
+      $.post({
+        url: "/pages/menu",
+        data: {},
+        success: function (data, status) {
+          console.log(data);
+          console.log("status=" + status);
+        }
+      })
+      alert("自动执行");
+    }
+    window.onload = myAutoRun();
+  </script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">
