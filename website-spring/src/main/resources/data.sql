@@ -10,74 +10,74 @@ CREATE TABLE `menu` (
                           PRIMARY KEY (`id`) USING BTREE
   ) ENGINE=InnoDB AUTO_INCREMENT=182961 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
-drop database if exists `user_auth`;
-CREATE TABLE `user_auth` (
-                             `id` int NOT NULL AUTO_INCREMENT,
-                             `user_info_id` int NOT NULL COMMENT '用户信息id',
-                             `user_role_id` int NOT NULL COMMENT '用户信息id',
-                             `user_seller_id` int NOT NULL DEFAULT '0' COMMENT '用户信息id',
-                             `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '用户名',
-                             `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '密码',
-                             `login_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '登录类型',
-                             `ip_address` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户登录ip',
-                             `ip_source` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'ip来源',
-                             `create_time` datetime NOT NULL COMMENT '创建时间',
-                             `update_time` datetime DEFAULT NULL COMMENT '更新时间',
-                             `last_login_time` datetime DEFAULT NULL COMMENT '上次登录时间',
-                             PRIMARY KEY (`id`) USING BTREE,
-                             UNIQUE KEY `username` (`username`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=1361712599 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
-
-drop database if exists `user_info`;
-CREATE TABLE `user_info` (
-                             `id` int NOT NULL AUTO_INCREMENT,
-                             `email` varchar(40) DEFAULT NULL,
-                             `avatar_id` int DEFAULT NULL,
-                             `intro` varchar(200) DEFAULT NULL,
-                             `is_ban` int DEFAULT NULL,
-                             `nickname` varchar(15) DEFAULT NULL,
-                             `cart` varchar(500) DEFAULT NULL,
-                             `purchased_list` varchar(1500) DEFAULT NULL,
-                             `real_name_auth_id` int DEFAULT '0',
-                             `ship_address_source` varchar(800) DEFAULT NULL,
-                             `default_ship_address` int DEFAULT NULL,
-                             `user_seller_id` int DEFAULT '0',
-                             `create_time` datetime NOT NULL COMMENT '创建时间',
-                             `update_time` datetime DEFAULT NULL COMMENT '更新时间',
-                             PRIMARY KEY (`id`),
-                             UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=1211730978 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-drop database if exists `user_real_name_auth`;
-
-CREATE TABLE `user_real_name_auth` (
-                                       `id` int NOT NULL AUTO_INCREMENT,
-                                       `real_name` int DEFAULT NULL,
-                                       `id_card_num` int DEFAULT NULL,
-                                       PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-drop database if exists `user_role`;
-
-
-CREATE TABLE `user_role` (
-                             `id` int NOT NULL AUTO_INCREMENT,
-                             `user_id` int NOT NULL,
-                             `perms` varchar(25) DEFAULT NULL,
-                             PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1363346863 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-drop database if exists `user_seller`;
-
-
-CREATE TABLE `user_seller` (
-                               `id` int NOT NULL AUTO_INCREMENT,
-                               `goods_list` varchar(2000) DEFAULT NULL,
-                               `selling_list` varchar(2000) DEFAULT NULL,
-                               `satisfaction_level` int NOT NULL DEFAULT '1',
-                               `default_ship_address` varchar(200) DEFAULT NULL,
-                               PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+# drop database if exists `user_auth`;
+# CREATE TABLE `user_auth` (
+#                              `id` int NOT NULL AUTO_INCREMENT,
+#                              `user_info_id` int NOT NULL COMMENT '用户信息id',
+#                              `user_role_id` int NOT NULL COMMENT '用户信息id',
+#                              `user_seller_id` int NOT NULL DEFAULT '0' COMMENT '用户信息id',
+#                              `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '用户名',
+#                              `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '密码',
+#                              `login_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '登录类型',
+#                              `ip_address` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '用户登录ip',
+#                              `ip_source` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'ip来源',
+#                              `create_time` datetime NOT NULL COMMENT '创建时间',
+#                              `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+#                              `last_login_time` datetime DEFAULT NULL COMMENT '上次登录时间',
+#                              PRIMARY KEY (`id`) USING BTREE,
+#                              UNIQUE KEY `username` (`username`) USING BTREE
+# ) ENGINE=InnoDB AUTO_INCREMENT=1361712599 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+#
+# drop database if exists `user_info`;
+# CREATE TABLE `user_info` (
+#                              `id` int NOT NULL AUTO_INCREMENT,
+#                              `email` varchar(40) DEFAULT NULL,
+#                              `avatar_id` int DEFAULT NULL,
+#                              `intro` varchar(200) DEFAULT NULL,
+#                              `is_ban` int DEFAULT NULL,
+#                              `nickname` varchar(15) DEFAULT NULL,
+#                              `cart` varchar(500) DEFAULT NULL,
+#                              `purchased_list` varchar(1500) DEFAULT NULL,
+#                              `real_name_auth_id` int DEFAULT '0',
+#                              `ship_address_source` varchar(800) DEFAULT NULL,
+#                              `default_ship_address` int DEFAULT NULL,
+#                              `user_seller_id` int DEFAULT '0',
+#                              `create_time` datetime NOT NULL COMMENT '创建时间',
+#                              `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+#                              PRIMARY KEY (`id`),
+#                              UNIQUE KEY `email` (`email`)
+# ) ENGINE=InnoDB AUTO_INCREMENT=1211730978 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+#
+# drop database if exists `user_real_name_auth`;
+#
+# CREATE TABLE `user_real_name_auth` (
+#                                        `id` int NOT NULL AUTO_INCREMENT,
+#                                        `real_name` int DEFAULT NULL,
+#                                        `id_card_num` int DEFAULT NULL,
+#                                        PRIMARY KEY (`id`)
+# ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+#
+# drop database if exists `user_role`;
+#
+#
+# CREATE TABLE `user_role` (
+#                              `id` int NOT NULL AUTO_INCREMENT,
+#                              `user_id` int NOT NULL,
+#                              `perms` varchar(25) DEFAULT NULL,
+#                              PRIMARY KEY (`id`)
+# ) ENGINE=InnoDB AUTO_INCREMENT=1363346863 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+#
+# drop database if exists `user_seller`;
+#
+#
+# CREATE TABLE `user_seller` (
+#                                `id` int NOT NULL AUTO_INCREMENT,
+#                                `goods_list` varchar(2000) DEFAULT NULL,
+#                                `selling_list` varchar(2000) DEFAULT NULL,
+#                                `satisfaction_level` int NOT NULL DEFAULT '1',
+#                                `default_ship_address` varchar(200) DEFAULT NULL,
+#                                PRIMARY KEY (`id`)
+# ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 
 # 182935,新菜单_0,"",0,,0,"[182936,182938,182939,182940]"

@@ -26,7 +26,7 @@ public class ShiroConfig {
         map.put("/pages/UserRegistrations", "perms[user:user]");
         map.put("/pages/UniqueVisitors", "perms[user:unique]");
 //        map.put("/pages/menu", "perms[user:menu]");
-        map.put("/pages/*", "authc");
+//        map.put("/pages/*", "authc");
 
         bean.setFilterChainDefinitionMap(map);
         bean.setLoginUrl("/login");
